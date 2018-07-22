@@ -21,7 +21,7 @@ Prevent Twitter from turning your \"ASP.NET\" text in tweet box into a link. Thi
 
 - Popup
   - Go to https://twitter.com/.
-  - Click the extension icon.
+  - Click the extension icon.  
     ![Popup](popup-load.png)  
   - Click "Copy ASP.NET text to clipboard" and then simply paste it into the tweet box.
   - You can also click the overlay at the top-right corner of the page.  
@@ -31,7 +31,7 @@ Prevent Twitter from turning your \"ASP.NET\" text in tweet box into a link. Thi
 
 ## How does it work
 
-It works by inserting zero width space character (`\u200B`) to trick the URL parser.
+It works by inserting zero width space character (`\u200B`) to trick the URL parser.  
 ![Zero Width Space](zero-width-space.png)  
 
 Inspired by https://twitter.com/jeremylikness/status/1001460070352392193
