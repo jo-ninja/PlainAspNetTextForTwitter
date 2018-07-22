@@ -1,0 +1,27 @@
+{
+  "name": "Plain ASP.NET Text for Twitter",
+  "version": "0.1",
+  "description":
+    "Prevent Twitter from turning your \"ASP.NET\" text in tweet box into a link. This extension will help you copy \"ASP.NET\" text to the clipboard. Simply paste it into the tweet box and Twitter won't turn it into a link.",
+  "author": "Joni",
+  "homepage_url": "https://github.com/jo-ninja/PlainAspNetTextForTwitter",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "manifest_version": 2,
+  "browser_action": {
+    "default_title":
+      "Prevent Twitter from turning your \"ASP.NET\" text in tweet box into a link.",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": ["https://twitter.com/*", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "run_at": "document_idle",
+      "js": ["content_scripts/contentScript.js"]
+    }
+  ]
+}
