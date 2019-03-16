@@ -16,10 +16,10 @@
       "Prevent Twitter from turning your \"ASP.NET\" text in tweet box into a link.",
     "default_popup": "popup/popup.html"
   },
-  "permissions": ["https://twitter.com/*", "activeTab"],
+  "permissions": ["https://*.twitter.com/*", "activeTab"],
   "content_scripts": [
     {
-      "matches": ["https://twitter.com/*"],
+      "matches": ["https://*.twitter.com/*"],
       "run_at": "document_idle",
       "js": ["content_scripts/contentScript.js"]
     }
